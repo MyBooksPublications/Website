@@ -35,71 +35,6 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
    </head>
-   <script>
-
-       
-
-      function myFunction() {
-          var input, filter, ul, li, a, i, txtValue;
-          input = document.getElementById("myInput");
-          filter = input.value.toUpperCase();
-          ul = document.getElementById("myUL");
-          li = ul.getElementsByTagName("li");
-          for (i = 0; i < li.length; i++) {
-              a = li[i].getElementsByTagName("a")[0];
-              txtValue = a.textContent || a.innerText;
-              if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                  li[i].style.display = "none";
-              } else {
-                  li[i].style.display = "block";
-              }
-          }
-      }
-      </script>
-   <style>
-      /* * {
-        box-sizing: border-box;
-      } */
-      
-      
-
-      #myInput {
-        background-image: url('https://www.w3schools.com/css/searchicon.png');
-        background-position: 10px 12px;
-        background-repeat: no-repeat;
-        width: 100%;
-        font-size: 16px;
-        padding: 12px 20px 12px 40px;
-        border: 1px solid #ddd;
-        margin-bottom: 12px;
-        border-radius: 25px;
-      }
-      
-      #myUL {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-      }
-      
-      #myUL li a {
-        border: 1px solid #ddd;
-        margin-top: -1px; /* Prevent double borders */
-        background-color: #f6f6f6;
-        padding: 12px;
-        text-decoration: none;
-        font-size: 18px;
-        color: black;
-        display: block;
-      }
-      
-      #myUL li a:hover:not(.header) {
-        background-color: #eee;
-      }
-      .search-bar-items{
-         display: none;
-         
-      }
-      </style>
    <!-- body -->
    <body class="main-layout">
       <!-- Script Tag for Send -->
@@ -113,12 +48,8 @@
             alert(`Thank you! Your Details haven't reached to us. This Site is Under Construction.`)
          }
       </script>
- 
-      
-
       <!-- header -->
-      <header style="margin-top: 300px; border-radius: 22px; " class="section">
-         
+      <header class="section">
          <!-- header inner -->
          <div class="header">
             <div class="container">
@@ -126,23 +57,11 @@
                   <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
                      <div class="full">
                         <div class="center-desk">
-                           
-                           <div class="logo "> <h1 style=" font-weight: bolder; white-space: nowrap;  ">My Books Publication </h1> </div>
+                           <div class="logo "> <h1>My Books Publication </h1> </div>
                         </div>
-
-                        
-                      
                      </div>
-                    
                   </div>
-                  <br><br><br>
-                  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for books" title="Search">
-                     
-                  <ul id="myUL" >
-               <li  class="search-bar-items"><a href="#" >Ishq Nahi Aansa</a></li>
-         
-                    </ul></div>     
-                  <div style="margin-top: 70px; " class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
                      <div class="menu-area">
                         <div class="limit-box">
                            <nav class="main-menu">
@@ -152,15 +71,12 @@
                                  <li><a href="Loadmore.html">Book Store</a></li>
                                  <li><a href="https://www.instagram.com/mybooks_publication/" target="_blank"><img class="igicon" src="instagram.png" alt="Our Ig"></a></li>
                                  <li><a href="https://www.facebook.com/MyBooks1" target="_blank"><img class="igicon" src="facebook-circular-logo.png" alt="Our Ig"></a></li>
-                                 
+                                 <li><a href="#" target="_blank"><img class="igicon" src="shopping-cart.png" alt="Our Ig"></a></li>
                               </ul>
                            </nav>
-                        </div> 
-                        
+                        </div>
                      </div>
                </div>
-               
-               
             </div>
          </div>
          <!-- end header inner -->
@@ -187,7 +103,7 @@
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                            <div class="img-box">
-                              <figure><img style=" margin-top: 30px; padding-top: 30px;" src="circle-cropped.png" alt="img"/></figure>
+                              <figure><img style="padding-top: 30px;" src="circle-cropped.png" alt="img"/></figure>
                            </div>
                         </div>
                      </div>
@@ -550,7 +466,7 @@
                            <li class="active"><a href="#">Home</a></li>                         
                            <li><a href="about.html" target="_blank">About</a></li>                         
                            <li><a href="Loadmore.html">Shop</a></li>
-                           <li><a href="#">Contact Us</a></li>
+                           <li><a href="contact.html">Contact Us</a></li>
                         </ul>
                      </div>
                   </div>
